@@ -1,7 +1,7 @@
 <div class="text-align: center">
     <div class="container mx-auto w-50 mb-3 mt-3">
         <h1>{{article.title}}</h1>
-        <span>{{article.content}}</span>
+        <markdown class="article-markdown" ngPreserveWhitespaces [src]="article.content"></markdown>
         <p><i>Written {{article.date | date: "yyyy MM dd"}}</i></p>
     </div>
 </div>

@@ -3,14 +3,13 @@
         <div *ngFor="let article of articles">
             <div class="card w-50 mb-3 mt-3 mx-auto">
                 <a class="non-highlighted-link" routerLink="/articles/{{article.id}}">
-                    <div class="card-header">
-                        <h4>{{article.title}}</h4>
+                    <img src="./assets/img/david-cut.jpg" class="card-img-top" alt="...">
+                    <div style="color: white" class="card-img-overlay">
+                        <h1>{{article.title}}</h1>
                     </div>
                     <div class="card-body">
-                        {{article.content}}
-                    </div>
-                    <div class="card-footer text-muted">
-                        <i>{{article.date | date : "yyy-MM-dd"}}</i>
+                        <p>The calendar has has incremented the year variable to 2019 and you still haven't acted on your new years resolution. But don't worry, you don't have to go to the gym. Instead I propose that you switch your resolution to something else like, for instance, to streamline your workflow with Bash.</p>
+                        <p class="card-text d-flex justify-content-end"><small class="text-muted">Written {{article.date | date : "yyy-MM-dd"}}</small></p>
                     </div>
                 </a>
             </div>

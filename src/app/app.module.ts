@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { ArticleComponent } from './article/article.component';
 import { AboutComponent } from './about/about.component';
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,8 +17,10 @@ import { AboutComponent } from './about/about.component';
     AboutComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
