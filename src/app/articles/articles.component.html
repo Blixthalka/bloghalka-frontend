@@ -2,16 +2,19 @@
     <ul class="articles">
         <div *ngFor="let article of articles">
             <div class="card w-50 mb-3 mt-3 mx-auto">
-                <div class="card-header">
-                    <h4>{{article.title}}</h4>
-                </div>
-                <div class="card-body">
-                    {{article.content}}
-                </div>
-                <div class="card-footer text-muted">
-                    <i>{{article.date | date : "yyy-MM-dd"}}</i>
-                </div>
+                <a class="non-highlighted-link" routerLink="/articles/{{article.id}}">
+                    <div class="card-header">
+                        <h4>{{article.title}}</h4>
+                    </div>
+                    <div class="card-body">
+                        {{article.content}}
+                    </div>
+                    <div class="card-footer text-muted">
+                        <i>{{article.date | date : "yyy-MM-dd"}}</i>
+                    </div>
+                </a>
             </div>
+
         </div>
     </ul>
 </div>

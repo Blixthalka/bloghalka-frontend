@@ -22,4 +22,8 @@ ARTICLES: Article[] = [
   getArticles() : Observable<Article[]> {
     return of(this.ARTICLES);
   }
+
+  getArticle(id: number) : Observable<Article> {
+    return of(this.ARTICLES.find(article => article.id === id));
+  }
 }
