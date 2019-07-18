@@ -1,5 +1,28 @@
 .non-highlighted-link {
     text-decoration: none !important;
     color: black;
-    font-family: 'Quicksand', sans-serif;
 }
+
+.card-img-top {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+}
+
+ul {
+    margin: 0; 
+    padding:0
+}
+
+.btn-outline-secondary {
+    color: #241623;
+    border-color: #241623;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #241623;
+    color: white;
+    border-color: #241623;
+    cursor: pointer;
+}
+

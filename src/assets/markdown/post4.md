@@ -24,6 +24,3 @@ The belonging to a group you are feeling when stationed with your comrades is ha
 
 ### Worth a read?
 Yes. Not a big investment, you could plow through it in a day and it raises interesting questions. 
-
-Over and out. 
-/Emil

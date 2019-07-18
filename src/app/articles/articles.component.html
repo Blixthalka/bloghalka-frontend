@@ -1,19 +1,28 @@
-<div style="text-align: center">
-    <ul class="articles">
+<div class="container">
+    <ul>
         <div *ngFor="let article of articles">
-            <div class="card w-50 mb-3 mt-3 mx-auto">
+            <div class="card my-3 mx-auto page-center">
                 <a class="non-highlighted-link" routerLink="/articles/{{article.id}}">
-                    <img src="./assets/img/david-cut.jpg" class="card-img-top" alt="...">
-                    <div style="color: white" class="card-img-overlay">
-                        <h1>{{article.title}}</h1>
-                    </div>
-                    <div class="card-body">
-                        <p>The calendar has has incremented the year variable to 2019 and you still haven't acted on your new years resolution. But don't worry, you don't have to go to the gym. Instead I propose that you switch your resolution to something else like, for instance, to streamline your workflow with Bash.</p>
-                        <p class="card-text d-flex justify-content-end"><small class="text-muted">Written {{article.date | date : "yyy-MM-dd"}}</small></p>
+                    <img src="{{(article.image) || './assets/img/david-cut.jpg'}}" class="card-img-top">
+                    <div class="card-body pb-0">
+                        <h5 class="card-title">{{article.title}}</h5>
+                        <p class="card-text">{{article.entry}}...</p>
                     </div>
                 </a>
-            </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col d-flex flex-row justify-content-start">
+                            <div *ngFor="let categoryy of article.categories">
+                                <button [routerLink]="'./'"  [queryParams]="{category:  categoryy }" class="btn-sm mr-1 btn-outline-secondary">{{categoryy}}</button>
+                            </div>
+                        </div>
+                        <div class="col-3 d-flex align-items-center justify-content-end">
+                            <small class="">{{article.date | date : "MMMM d yyyy"}}</small>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
         </div>
     </ul>
 </div>

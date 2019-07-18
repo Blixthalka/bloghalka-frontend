@@ -105,6 +105,3 @@ OK
 I have shown you that it is possible to create indexes with Redis.
 However I would not recommend doing it.
 Instead I would reevaluate the choice of Redis as a databse and maybe choose another one with these features built in. 
-
-Over and out.
-/Emil

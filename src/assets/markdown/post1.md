@@ -32,6 +32,3 @@ Then to get todays date we use the `date` function and passes a date formatting 
 
 And we have our little efficient function here, which will maybe save us 5 seconds every time we access a log file. 
 It is not much, but if we add other small efficient functions like this, it will eventually start to add up to substantial amount of time.
-
-Over and out.  
-//Emil
