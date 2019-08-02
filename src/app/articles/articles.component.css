@@ -19,6 +19,10 @@ ul {
     border-color: #241623;
 }
 
+.btn-outline-secondary * {
+    color: #241623
+}
+
 .btn-outline-secondary:hover {
     background-color: #241623;
     color: white;

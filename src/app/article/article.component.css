@@ -39,10 +39,6 @@
     cursor: pointer;
 }
 
-markdown {
-    padding-top: 100px;
-}
-
 pre[class*="language-"] {
    margin: 0;
    margin-bottom: 2vw;
