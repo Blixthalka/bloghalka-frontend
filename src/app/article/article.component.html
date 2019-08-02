@@ -3,7 +3,7 @@
         <img class="jumbotron-image" src="{{(article.image) || './assets/img/david-cut.jpg'}}">
         <h1 class="imagebox-centered">{{article.title}}</h1>
     </div>
-    <div class="container mx-auto page-center">
+    <div class="container mx-auto page-center mt-4">
         <div class="text-left my-3">
             <markdown ngPreserveWhitespaces [src]="article.content"></markdown>
         </div>
