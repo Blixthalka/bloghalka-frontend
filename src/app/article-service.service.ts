@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Article } from './article';
 
@@ -12,12 +11,12 @@ export class ArticleServiceService {
   constructor() { }
 
   ARTICLES: Article[] = [
-  //  {
-  //    id: 5, title: "Three takeaways from The Drunkard's Walk",
-  //    entry: "I have read the drunkard's walk by Leonard Mlodinow. Which is a book about randomness and how it rules our lives. The name of the book actually comes from",
-  //    content: "./assets/markdown/post5.md", date: new Date("2019-07-11"), image: "./assets/img/annie-spratt-lRcoPGrwkv0-unsplash.jpg",
-  //    categories: ["book", "randomness"]
-  //  },
+   /* {
+      id: 5, title: "En 25 årings ekonomi",
+      entry: "Här har samlat lite tankar, hårda siffror och mål jag har med min privatekonomi",
+      content: "./assets/html/post5.html", date: new Date("2019-08-03"), image: "./assets/img/dollar.jpg",
+      categories: ["personal finance", "economics"]
+    },*/
     {
       id: 4, title: "Tribe by Sebastian Junger",
       entry: "This book is about belonging in a society and how our modern society does not meet the fundamental needs of a human being. We are cramped in our apartments, living alone or with your family. We are surrounded by people all the time, yet we feel alone",

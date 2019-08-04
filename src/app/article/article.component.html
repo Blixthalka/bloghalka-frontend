@@ -5,7 +5,14 @@
     </div>
     <div class="container mx-auto page-center mt-4">
         <div class="text-left my-3">
-            <markdown ngPreserveWhitespaces [src]="article.content"></markdown>
+
+            <div *ngIf="article.content.endsWith('md'); else elseBlock">
+                    <markdown ngPreserveWhitespaces [src]="article.content"></markdown>
+            </div>
+            <ng-template #elseBlock>
+                <app-article-body [src]="article.content"></app-article-body>
+            </ng-template>
+         
         </div>
 
         <hr>
