@@ -13,3 +13,18 @@ img {
     max-width: 700px;
     width: 100%;  
 }
+
+.btn-outline-secondary {
+    color: #241623;
+    border-color: #241623;
+    border-style: solid;
+    border-width: thin;
+    background-color: white;
+}
+
+
+.btn-outline-secondary:hover {
+    background-color: #241623;
+    color: white;
+    cursor: pointer;
+}
