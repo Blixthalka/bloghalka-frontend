@@ -13,7 +13,7 @@ export class ArticleServiceService {
   ARTICLES: Article[] = [
     {
       id: 5, title: "Privatekonomi",
-      entry: "Här har samlat lite tankar, siffror och mål jag har med min privatekonomi",
+      entry: "Här har jag samlat lite tankar, siffror och mål jag har med min privatekonomi",
       content: "./assets/html/post5.html", date: new Date("2019-08-03"), image: "./assets/img/dollar.jpg",
       categories: ["personal finance"]
     },
