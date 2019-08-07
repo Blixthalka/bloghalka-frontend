@@ -8,13 +8,13 @@ import { ArticleComponent } from './article/article.component';
 import { AboutComponent } from './about/about.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClientModule } from '@angular/common/http';
-import { PieChartComponent} from './pie-chart/pie-chart.component';
 
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { ArticleBodyComponent } from './article-body/article-body.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,8 @@ import { ArticleBodyComponent } from './article-body/article-body.component';
     ArticlesComponent,
     ArticleComponent,
     AboutComponent,
-    PieChartComponent,
-    ArticleBodyComponent
+    ArticleBodyComponent,
+    LineChartComponent
   ],
   imports: [
     HttpClientModule,
@@ -38,6 +38,6 @@ import { ArticleBodyComponent } from './article-body/article-body.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [BsDropdownModule, TooltipModule, ModalModule, PieChartComponent]
+  exports: [BsDropdownModule, TooltipModule, ModalModule, LineChartComponent]
 })
 export class AppModule { }

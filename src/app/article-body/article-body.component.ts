@@ -1,6 +1,6 @@
 import {
   Component, OnInit, Input, ViewChild, ViewContainerRef, Compiler,
-  ComponentFactory, ComponentFactoryResolver, NgModule, ModuleWithComponentFactories,
+  ComponentFactory, NgModule, ModuleWithComponentFactories,
   ComponentRef
 } from '@angular/core';
 

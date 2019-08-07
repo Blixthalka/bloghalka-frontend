@@ -11,19 +11,18 @@ export class ArticleServiceService {
   constructor() { }
 
   ARTICLES: Article[] = [
-   /* {
-      id: 5, title: "En 25 årings ekonomi",
-      entry: "Här har samlat lite tankar, hårda siffror och mål jag har med min privatekonomi",
+    {
+      id: 5, title: "Privatekonomi",
+      entry: "Här har samlat lite tankar, siffror och mål jag har med min privatekonomi",
       content: "./assets/html/post5.html", date: new Date("2019-08-03"), image: "./assets/img/dollar.jpg",
-      categories: ["personal finance", "economics"]
-    },*/
+      categories: ["personal finance"]
+    },
     {
       id: 4, title: "Tribe by Sebastian Junger",
       entry: "This book is about belonging in a society and how our modern society does not meet the fundamental needs of a human being. We are cramped in our apartments, living alone or with your family. We are surrounded by people all the time, yet we feel alone",
       content: "./assets/markdown/post4.md", date: new Date("2019-06-02"), image: "./assets/img/elizabeth-lies-T9Gsevu_N8Y-unsplash.jpg",
       categories: ["book", "society", "belonging"]
     },
-
     {
       id: 3, title: "Creating an index in Redis",
       entry: "Redis is an in-memory key/value database, it does not have any natural indexing capabilities. Without an index a search on anything different than the key will be an expensive operation, since all elements needs to be fetched and then filtered in the application code",
