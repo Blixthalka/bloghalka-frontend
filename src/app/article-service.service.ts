@@ -11,12 +11,12 @@ export class ArticleServiceService {
   constructor() { }
 
   ARTICLES: Article[] = [
-    {
+   /* {
       id: 5, title: "Privatekonomi",
       entry: "Här har jag samlat lite tankar, siffror och mål jag har med min privatekonomi",
       content: "./assets/html/post5.html", date: new Date("2019-08-03"), image: "./assets/img/dollar.jpg",
       categories: ["personal finance"]
-    },
+    },*/
     {
       id: 4, title: "Tribe by Sebastian Junger",
       entry: "This book is about belonging in a society and how our modern society does not meet the fundamental needs of a human being. We are cramped in our apartments, living alone or with your family. We are surrounded by people all the time, yet we feel alone",
