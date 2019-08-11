@@ -13,10 +13,10 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgxEchartsModule } from 'ngx-echarts';
-import { ArticleBodyComponent } from './article-body/article-body.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { BookshelfComponent } from './bookshelf/bookshelf.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,6 @@ import { PageHeaderComponent } from './page-header/page-header.component';
     ArticlesComponent,
     ArticleComponent,
     AboutComponent,
-    ArticleBodyComponent,
     LineChartComponent,
     BookshelfComponent,
     PageHeaderComponent
@@ -38,7 +37,8 @@ import { PageHeaderComponent } from './page-header/page-header.component';
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
-    NgxEchartsModule
+    NgxEchartsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

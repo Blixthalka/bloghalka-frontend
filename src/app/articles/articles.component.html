@@ -1,10 +1,10 @@
-<app-page-header imageSrc="./assets/img/blog.jpg" text="Blog" ></app-page-header>
+<app-page-header imageSrc="./assets/img/blog.jpg" text="Blogg" ></app-page-header>
 <div class="container">
     <ul>
         <div *ngFor="let article of articles">
             <div class="card my-3 mx-auto page-center shadow-sm">
-                <a class="non-highlighted-link" routerLink="/articles/{{article.id}}">
-                    <img src="{{(article.image) || './assets/img/david-cut.jpg'}}" class="card-img-top">
+                <a class="non-highlighted-link" routerLink="/artiklar/{{article.id}}">
+                    <img src="{{article.image}}" class="card-img-top">
                     <div class="card-body pb-0">
                         <h5 class="card-title">{{article.title}}</h5>
                         <p class="card-text">{{article.entry}}...</p>

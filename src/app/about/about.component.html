@@ -1,62 +1,124 @@
-<div class="imagebox mb-3">
-    <div id="particles-js" class="jumbotron-image "></div>
-  <!--  <div class="imagebox-centered-2">
+<div class="imagebox-2 mb-3">
+    <div id="particles-js" class="jumbotron-image-2"></div>
+    <!--  <div class="imagebox-centered-2">
         <img class="profile-image my-3 mx-auto d-block" src="./assets/img/profile_picture.png">
     </div>-->
-    <h1 class="imagebox-centered-2">Emil Nilsson</h1>
+    <div class="imagebox-centered-2">
+        <h1>Emil Nilsson</h1>
+    </div>
+
 </div>
 
 
+
 <div class="container page-center mx-auto">
-   
-    
-    <span>
-        Hello! I’m a 25 year old guy from the northern parts of Sweden, currently located in Stockholm.
-        I enjoy developing applications, learning new things and running (especially with a map in my hand).
-        Currently I’m working with payments and writing distributed systems in Java.
-    </span>
-
-    <hr>
-    <h4>Contact</h4>
-    Add me on
-    <a class="non-highlighted-link-white" href="https://linkedin.com/in/emil-nilsson-19262b146/">linked in</a>
-    or send me a
-    <a class="non-highlighted-link-white" href="mailto:emil837@gmail.com">mail</a>.
-
-    <hr>
-    <h4>Experience</h4>
-    <p>Here I list my working experience.</p>
-
-    <h4>Trustly</h4>
-    <p>
-        At Trustly I work with building and maintaining systems for making fast bank transfers.
-        My work is focused at distributed systems and micro services. I use Redis, Pact, Kubernetes, Docker, Java,
-        Spring
-        Boot and Reactor in my daily work.
-    </p>
-
-    <h4>PjPaymentTech</h4>
-    <p>
-        At PJ I also worked with building and maintaining systems for making fast bank transfers.
-        During my time here I got to use Java, Spring Boot, MySQL, JQuery, React och Apache Velocity.
-    </p>
-
-    <h4>Intinor</h4>
-    <p>At Intinor I got my first experience working as a software developer.
-        I also attained knowledge about transmission of audio and video over IP networks.
-        During my stay here my biggest task was to develop an ember+ interface, however some bug fixing was
-        also
-        part of my duties.
-        I mainly worked in C/C++, but also got to use my knowledge in Bash and Perl.
-        Throughout the summer I worked full time and part time during the autumn alongside my studies.
-        When spring arrived I started writing my master thesis here.
-    </p>
-
-    <h4>Umeå university - M.Sc.Eng. Computing science</h4>
-    <p>I steered my education towards distributed systems.
-        In my master thesis I wrote about video synchronisation from multiple senders.
-    </p>
+    <div class="btn-group btn-group-toggle float-right">
+        <label class="btn btn-sm btn-dark">
+            <input name="options" id="option1" type="radio" value="svenska" [(ngModel)]="language">
+            Svenska
+        </label>
+        <label class="btn btn-sm btn-dark">
+            <input name="options" id="option2" type="radio" value="english" [(ngModel)]="language"> English
+        </label>
+    </div>
 
 
+    <div *ngIf="language === 'english'; else elseBlock">
+        <h1>Hello!</h1>
+        <p>
+            I’m a 25 year old guy from the northern parts of Sweden, currently located in Stockholm.
+            I enjoy developing applications, learning new things and running (especially with a map in my hand).
+            Currently I’m working with payments and writing distributed systems in Java.
+        </p>
 
+        <hr>
+        <h4>Contact</h4>
+        Add me on
+        <a class="non-highlighted-link-white" href="https://linkedin.com/in/emil-nilsson-19262b146/">linked in</a>
+        or send me a mail to
+        <a class="non-highlighted-link-white" href="mailto:emil837@gmail.com">emil837@gmail.com</a>.
+
+        <hr>
+        <h4>Experience</h4>
+        <p>Here I list my working experience.</p>
+
+        <h4>Trustly</h4>
+        <p>
+            At Trustly I work with building and maintaining systems for making fast bank transfers.
+            My work is focused at distributed systems and micro services. I use Redis, Pact, Kubernetes, Docker, Java,
+            Spring
+            Boot and Reactor in my daily work.
+        </p>
+
+        <h4>PjPaymentTech</h4>
+        <p>
+            At PJ I also worked with building and maintaining systems for making fast bank transfers.
+            During my time here I got to use Java, Spring Boot, MySQL, JQuery, React och Apache Velocity.
+        </p>
+
+        <h4>Intinor</h4>
+        <p>At Intinor I got my first experience working as a software developer.
+            I also attained knowledge about transmission of audio and video over IP networks.
+            During my stay here my biggest task was to develop an ember+ interface, however some bug fixing was
+            also
+            part of my duties.
+            I mainly worked in C/C++, but also got to use my knowledge in Bash and Perl.
+            Throughout the summer I worked full time and part time during the autumn alongside my studies.
+            When spring arrived I started writing my master thesis here.
+        </p>
+
+        <h4>Umeå university - M.Sc.Eng. Computing science</h4>
+        <p>I steered my education towards distributed systems.
+            In my master thesis I wrote about video synchronisation from multiple senders.
+        </p>
+    </div>
+    <ng-template #elseBlock>
+        <h1>Hej!</h1>
+        <div>
+            <p>
+                Kul att du hittat hit! 
+                Jag är en 25 åring från Norrland som flyttat ned till Stockholm, där jag nu bor. 
+                Jag gillar att utvecka applikationer, lära mig nya saker och att springa.
+                Gillar extra mycket att springa när man får ha karta och kompass i händerna. 
+                Just nu arbetar jag med betalningar och skriver distribuerade system i Java. 
+            </p>
+
+            <hr>
+            <h4>Kontakt</h4>
+            Lägg till mig på
+            <a class="non-highlighted-link-white" href="https://linkedin.com/in/emil-nilsson-19262b146/">linked in</a>
+            eller skicka ett mail till
+            <a class="non-highlighted-link-white" href="mailto:emil837@gmail.com">emil837@gmail.com</a>.
+
+            <hr>
+            <h4>Arbetslivserfarenhet</h4>
+            <p>Här listar jag var jag har hunnit jobba inom mjukvaruutveckling.</p>
+
+            <h4>Trustly</h4>
+            <p>
+                På Trustly jobbar jag med system för snabba banköverföringar, med ett stort fokus på mikrotjänster. 
+                Använder tekniker som Redis, Pact, Kubernetes, Docker, Java, Spring Boot och Reactor.
+            </p>
+
+            <h4>PjPaymentTech</h4>
+            <p>
+                På PJ jobbade jag också med att bygga och underhålla system för snabba banköverföringar. 
+                Under tiden här fick jag använda tekniker som Java, Spring Boot, MySQL, JQuery, React och Apache Velocity.
+            </p>
+
+            <h4>Intinor</h4>
+            <p>
+                På Intinor fick jag min första erfarenhet av att jobba som mjukvaruutvecklare, samt mycket kunskap om hur ljud och bild skickas över IP nät. 
+                Under min vistelse här var den största uppgiften att programmera ett ember+ interface, men fick även testa på att lösa existerande buggar i hela systemet.
+                 Mestadels jobbade jag i C och C++ men fick även utnyttja kunskaper i bash och perl. Jag jobbade heltid under sommaren och deltid på hösten vid sidan av studier.
+                  Under våren skrev jag mitt examensarbete här.
+            </p>
+
+            <h4>Umeå universitet - Civilingenjör datavetenskap</h4>
+            <p>
+                Jag har styrt min utbildning mot distribuerade system. 
+                Under mitt examensarbete skrev jag om video synkronisering från flera sändare.
+            </p>
+        </div>
+    </ng-template>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import  ParticlesConfig from '../../assets/data/particles-2.json';
 
 declare var particlesJS: any;
@@ -9,10 +9,7 @@ declare var particlesJS: any;
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  style: object = {};
-  params: object = {};
-  width: number = 100;
-  height: number = 100;
+  language: string = "svenska";
 
   constructor() { }
 
@@ -21,5 +18,8 @@ export class AboutComponent implements OnInit {
       console.log('callback - particles.js config loaded');
     });
   }
+
+
+
 
 }
