@@ -15,6 +15,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { ArticleBodyComponent } from './article-body/article-body.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
+import { BookshelfComponent } from './bookshelf/bookshelf.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { LineChartComponent } from './line-chart/line-chart.component';
     ArticleComponent,
     AboutComponent,
     ArticleBodyComponent,
-    LineChartComponent
+    LineChartComponent,
+    BookshelfComponent,
+    PageHeaderComponent
   ],
   imports: [
     HttpClientModule,

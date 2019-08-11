@@ -1,8 +1,5 @@
 <div>
-    <div class="imagebox mb-3">
-        <img class="jumbotron-image" src="{{(article.image) || './assets/img/david-cut.jpg'}}">
-        <h1 class="imagebox-centered">{{article.title}}</h1>
-    </div>
+    <app-page-header text="{{article.title}}" imageSrc="{{article.image}}"></app-page-header>
     <div class="container mx-auto page-center mt-4">
         <div class="text-left my-3">
 
@@ -12,7 +9,6 @@
             <ng-template #elseBlock>
                 <app-article-body [src]="article.content"></app-article-body>
             </ng-template>
-         
         </div>
 
         <hr>
