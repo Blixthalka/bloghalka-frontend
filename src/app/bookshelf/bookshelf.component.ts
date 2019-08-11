@@ -50,6 +50,27 @@ export class BookshelfComponent implements OnInit {
       imagePath: "./assets/img/bok_fooled_by_randomness.jpeg",
       description: "Intressant bok om hur slumpmässighet påverkar våra liv. När man läser denna bok inser man hur dålig människan är på att tänka i sannorlikehter. Väldigt nyttig.",
       rating: 4
+    },
+    {
+      title: "Rich Dad Poor Dad",
+      author: "Robert T Kiyosaki",
+      imagePath: "./assets/img/bok_rich_dad.jpeg",
+      description: "Ekonomibok som ger ett grundläggande tänk kring privatekonomi. Väldigt för företagande, samt att köpa tillgångar istället för förplikterser.",
+      rating: 4
+    },
+    {
+      title: "The Drunkard's Walk",
+      author: "Leonard Mlodinow",
+      imagePath: "./assets/img/bok_drunkards.jpeg",
+      description: "Grundläggande bok om sannorlikhet. Går långt tillbaka i historien. Handlar även om hur dålig människan är på att förstå sannorlikheter.",
+      rating: 4
+    },
+    {
+      title: "The Story of the Human Body",
+      author: "Daniel Lieberman",
+      imagePath: "./assets/img/bok_story_human_body.jpeg",
+      description: "Går igenom vad våran kropp är anpassad för, samt hur missanpassad den är för det liv vi lever idag. Intressant.",
+      rating: 5
     }
   ]
 
