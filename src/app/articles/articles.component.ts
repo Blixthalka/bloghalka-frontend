@@ -21,7 +21,6 @@ export class ArticlesComponent implements OnInit {
       .subscribe(params => {
         console.log(params.category)
         if (params.category) {
-          console.log("hej")
           this.articleService.getArticlesWithinCategory(params.category)
             .subscribe(articles => this.articles = articles);
         } else {

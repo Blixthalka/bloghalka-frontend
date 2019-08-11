@@ -3,4 +3,5 @@ export class Book {
     author: string;
     imagePath: string;
     description: string;
+    rating: number;
 }

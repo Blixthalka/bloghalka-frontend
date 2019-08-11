@@ -13,37 +13,43 @@ export class BookshelfComponent implements OnInit {
       title: "Hjärnstark",
       author: "Anders Hansen",
       imagePath: "./assets/img/bok_hjarnstark.jpeg",
-      description: "Ett måste för den som vill må bra. I den här boken får man veta hur hjärnan påverkas av fysisk aktivitet. Spoiler alert. Det är inte lite."
+      description: "Ett måste för den som vill må bra. I den här boken får man veta hur hjärnan påverkas av fysisk aktivitet. Spoiler alert. Det är inte lite.",
+      rating: 5
     },
     {
       title: "Tribe",
       author: "Sebastian Junger",
       imagePath: "./assets/img/bok_tribe.jpeg",
-      description: "En bok om tillhörighet och hur det moderna samhället inte kan förse oss med våra mest grundläggande behov. "
+      description: "En bok om tillhörighet och hur det moderna samhället inte kan förse oss med våra mest grundläggande behov. Inte en stor investering. Väcker intressanta frågor.",
+      rating: 3
     },
     {
       title: "Thinking Fast and Slow",
       author: "Daniel Kahneman",
       imagePath: "./assets/img/bok_fast_n_slow.jpeg",
-      description: "In progress"
+      description: "Nästa bok till rakning.",
+      rating: 0
     },
     {
       title: "Born to Run",
       author: "Christopher McDougall",
       imagePath: "./assets/img/bok_born_to_run.jpeg",
-      description: "Löpning"
+      description: "Löpning. Löpning. Löpning. Ganska seg bok. Innehåller intressanta argument om barfortalöpning. Läs bara om du älskar löpning. Speciellt riktad till ultralöpare.",
+      rating: 2
     },
     {
       title: "The Magic of Thinking Big",
       author: "David J Schwartz",
       imagePath: "./assets/img/bok_thinking_big.jpeg",
-      description: "self improvement"
+      description: "Väldigt amerikansk bok om personlig förbättring. Bra och egentligen självklara tips. Bra att få repetition.",
+      rating: 3
     },
     {
       title: "Fooled by Randomness",
       author: "Nassim Nicholas Taleb",
       imagePath: "./assets/img/bok_fooled_by_randomness.jpeg",
-      description: "Randomness"
+      description: "Intressant bok om hur slumpmässighet påverkar våra liv. När man läser denna bok inser man hur dålig människan är på att tänka i sannorlikehter. Väldigt nyttig.",
+      rating: 4
     }
   ]
 
@@ -54,5 +60,9 @@ export class BookshelfComponent implements OnInit {
       this.books.push(this.books[0]);
     }*/
   }
+
+  maxRating() {
+    return new Array(5);
+}
 
 }

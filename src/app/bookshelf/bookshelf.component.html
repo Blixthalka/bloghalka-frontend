@@ -1,18 +1,44 @@
 <div>
-    <app-page-header imageSrc="./assets/img/bookshelf.jpg" text="Bookshelf" ></app-page-header>
+    <app-page-header imageSrc="./assets/img/bookshelf.jpg" text="Bokhylla"></app-page-header>
+    <div class="container">
+    <small class="text-muted">asd</small>
+    </div>
     <div class="card-columns container">
         <div *ngFor="let book of books">
-            <div class="card">
-              <img src="{{book.imagePath}}" class="card-img-top border-bottom" alt="...">
-              <div class="card-body">
-                <span class="card-title">
-                    <span class="card-title">{{book.title}}</span>
-                    <br>
-                    <small class="text-muted">{{book.author}}</small>
-                </span>
-                <!--<p class="card-text">{{book.description}}</p>-->
-              </div>
+            <div class="card shadow-sm">
+                <div class="row no-gutters border-bottom">
+                    <img src="{{book.imagePath}}" class="col-md-4 card-img border-right border-bottom" alt="...">
+                    <div class="card-body col-md-8 p-3">
+
+                        <span class="card-title">{{book.title}}</span>
+                            <br>
+                            <small class="text-muted">{{book.author}}</small>
+                            <br>
+                            <div class="container">
+                            <div class="row">
+                                <div *ngFor='let in of maxRating() ;let i = index'>
+                                    <div *ngIf="i < book.rating; else elseBlock">
+                                        <img class="col" src='./assets/img/icons/star_1.svg' class="star">
+                                    </div>
+                                    <ng-template #elseBlock>
+                                        <img class="col" src='./assets/img/icons/star_0.svg' class="star">
+                                    </ng-template>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<button class="btn-sm btn-primary"  data-toggle="collapse" data-target="#descriptionCollapse-" aria-expanded="false" aria-controls="multiCollapseExample2">description</button>
+                    -->
+                        </div>
+                </div>
+                <div >
+                        <div class="card-body">
+                         {{book.description}}
+                        </div>
+                      </div>
+                
             </div>
-          </div>
+            
+            
+        </div>
     </div>
 </div>
