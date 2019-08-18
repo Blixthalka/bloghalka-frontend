@@ -6,7 +6,7 @@
     <div class="card-columns container">
         <div *ngFor="let book of books">
             <div class="card shadow-sm">
-                <a class="non-highlighted-link" href="https://track.adtraction.com/t/t?a=1064669490&as=1409659508&t=2&tk=1&url=https://www.bokus.com/bok/9789175038452/hjarnstark-hur-motion-och-traning-starker-din-hjarna/"
+                <a class="non-highlighted-link" href="{{book.link}}"
                     target="_blank">
                     <div class="row no-gutters border-bottom">
                         <img src="{{book.imagePath}}" class="col-md-4 card-img border-right border-bottom" alt="...">
