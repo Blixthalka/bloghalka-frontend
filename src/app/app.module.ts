@@ -14,7 +14,6 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { LineChartComponent } from './line-chart/line-chart.component';
-import { BookshelfComponent } from './bookshelf/bookshelf.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { FormsModule } from '@angular/forms';
 
@@ -25,7 +24,6 @@ import { FormsModule } from '@angular/forms';
     ArticleComponent,
     AboutComponent,
     LineChartComponent,
-    BookshelfComponent,
     PageHeaderComponent
   ],
   imports: [

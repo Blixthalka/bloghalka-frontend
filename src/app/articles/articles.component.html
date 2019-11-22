@@ -1,9 +1,8 @@
-<app-page-header imageSrc="./assets/img/blog.jpg" text="Blogg" ></app-page-header>
 <div class="container">
     <ul>
         <div *ngFor="let article of articles">
             <div class="card my-3 mx-auto page-center shadow-sm">
-                <a class="non-highlighted-link" routerLink="/artiklar/{{article.id}}">
+                <a class="non-highlighted-link" routerLink="/articles/{{article.id}}">
                     <img src="{{article.image}}" class="card-img-top">
                     <div class="card-body pb-0">
                         <h5 class="card-title">{{article.title}}</h5>
@@ -11,18 +10,10 @@
                     </div>
                 </a>
                 <div class="card-body ">
-                    <div class="row">
-                        <div class="col d-flex flex-row justify-content-start">
-                            <div *ngFor="let categoryy of article.categories">
-                                <button [routerLink]="'./'" [queryParams]="{category:  categoryy }" class="btn-sm mr-1 btn-outline-secondary">{{categoryy}}</button>
-                            </div>
-                        </div>
-                        <div class="col-3 d-flex align-items-center justify-content-end">
-                            <small class="">{{article.date | date : "MMMM d yyyy"}}</small>
-                        </div>
+                    <div class="d-flex align-items-center justify-content-end">
+                        <small class="">{{article.date | date : "MMMM d yyyy"}}</small>
                     </div>
                 </div>
-
             </div>
         </div>
     </ul>

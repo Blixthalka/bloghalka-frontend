@@ -9,12 +9,6 @@
         <div class="text-muted d-flex justify-content-start my-3">
             <small><i>Emil Nilsson - {{article.date | date : "MMMM d yyyy"}}</i></small>
         </div>
-        <div class="d-flex justify-content-start mb-3">
-            <span class="mr-2">Read more in category?</span>
-            <div *ngFor="let categoryy of article.categories">
-                <button [routerLink]="'/articles'" [queryParams]="{category:  categoryy }" class="btn-sm mr-2 btn-outline-secondary">{{categoryy}}</button>
-            </div>
-        </div>
     </div>
     <img class="jumbotron-image-small" src="{{(article.image) || './assets/img/david-cut.jpg'}}">
 

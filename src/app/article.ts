@@ -5,5 +5,4 @@ export class Article {
     content: String;
     date: Date;
     image: String;
-    categories: String[];
 }
