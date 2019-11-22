@@ -1,19 +1,18 @@
 <div class="container">
     <ul>
         <div *ngFor="let article of articles">
-            <div class="card my-3 mx-auto page-center shadow-sm">
+            <div class="card my-3 mx-auto page-center shadow-on-hover">
                 <a class="non-highlighted-link" routerLink="/articles/{{article.id}}">
                     <img src="{{article.image}}" class="card-img-top">
-                    <div class="card-body pb-0">
-                        <h5 class="card-title">{{article.title}}</h5>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-start">
+                            <h5 class="flex-grow-1">{{article.title}}</h5>
+                            <small class="">{{article.date | date : "MMMM d yyyy"}}</small>
+                        </div>
+                        <hr>
                         <p class="card-text">{{article.entry}}...</p>
                     </div>
                 </a>
-                <div class="card-body ">
-                    <div class="d-flex align-items-center justify-content-end">
-                        <small class="">{{article.date | date : "MMMM d yyyy"}}</small>
-                    </div>
-                </div>
             </div>
         </div>
     </ul>
