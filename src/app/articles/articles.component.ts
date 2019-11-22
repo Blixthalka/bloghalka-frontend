@@ -20,13 +20,8 @@ export class ArticlesComponent implements OnInit {
     this.route.queryParams
       .subscribe(params => {
         console.log(params.category)
-        if (params.category) {
-          this.articleService.getArticlesWithinCategory(params.category)
-            .subscribe(articles => this.articles = articles);
-        } else {
-          this.articleService.getArticles()
-            .subscribe(articles => this.articles = articles);
-        }
+        this.articleService.getArticles()
+          .subscribe(articles => this.articles = articles);
       })
 
 
