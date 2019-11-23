@@ -31,11 +31,29 @@
 pre[class*="language-"] {
    margin: 0;
    margin-bottom: 2vw;
+   padding-left: 5vw; 
+   border-radius: 0%;
+   font-size: 14px
 }
 
 markdown > * {
     margin-bottom: 2vw;
 }
+
+
+markdown > p, h1, h2, h3, h4, h5, h6, li {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 560px;
+}
+
+markdown > img {
+    margin: 0;
+    width: 100%;
+    object-fit: fill;
+    max-width: none;
+}
+
 
 @media (min-width: 0px) {  
     .h1-responsive {font-size: 16px;}
@@ -43,7 +61,7 @@ markdown > * {
 
   
 @media (min-width: 768px) {  
-.h1-responsive {font-size: 30px;}
+    .h1-responsive {font-size: 30px;}
 }
 
   
