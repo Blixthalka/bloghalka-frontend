@@ -5,11 +5,9 @@
             <markdown class="" ngPreserveWhitespaces [src]="article.content"></markdown>
         </div>
 
-        <div class="mx-auto page-center text-muted d-flex justify-content-start my-3">
-            <small><i>Emil Nilsson - {{article.date | date : "MMMM d yyyy"}}</i></small>
-        </div>
+
     </div>
-    
-    <img class=" jumbotron-image-small"src="{{(article.image) || './assets/img/david-cut.jpg'}}">
-    
+    <small class="pb-4 d-flex justify-content-center"><i>Emil Nilsson - {{article.date | date : "MMMM d yyyy"}}</i></small>
+    <img class="jumbotron-image-small" src="{{(article.image) || './assets/img/david-cut.jpg'}}">
+
 </div>
