@@ -41,7 +41,14 @@ markdown > * {
 }
 
 
-markdown > p, h1, h2, h3, h4, h5, h6, li {
+markdown > p,
+markdown > h1,
+markdown >  h2,
+markdown >  h3,
+markdown >  h4,
+markdown >  h5,
+markdown >  h6,
+markdown >  li {
     margin-left: auto;
     margin-right: auto;
     padding-left: 2vw;
