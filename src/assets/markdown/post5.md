@@ -1,10 +1,10 @@
 Here I have gathered my solutions for the advent of code.
-Advent of code is a great way of learning a new language and that's why I have choosen to write in Go, which is a new language for me.
+Advent of code is a great way of learning a new language and that's why I have chosen to write in Go!
 
 
 ### Day 1 
-
-Felt like an easy start. I think the hardest part was returning a list from a function. 
+Felt like an easy start. 
+I think the hardest part was returning a list from a function... or as they call them in Go slices.  
 
 
 ##### Part 1 
