@@ -7,7 +7,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-start">
                             <h5 class="flex-grow-1">{{article.title}}</h5>
-                            <small class="">{{article.date | date : "MMMM d yyyy"}}</small>
+                            <small class="d-none d-sm-block">{{article.date | date : "MMMM d yyyy"}}</small>
                         </div>
                         <hr>
                         <p class="card-text">{{article.entry}}...</p>
