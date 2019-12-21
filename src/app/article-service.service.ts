@@ -12,6 +12,11 @@ export class ArticleServiceService {
 
   ARTICLES: Article[] = [
     {
+      id: 5, title: "Tracing with Sleuth and Reactor",
+      entry: "When living in a microservice world, you have multiple standalone services that communicates with eachother. Thus following a whole call chain or maybe an order will be difficult unless you add some kind of tracing",
+      content: "./assets/markdown/post5.md", date: new Date("2019-12-21"), image: "./assets/img/faris-mohammed-Rqv4AWbvPjg-unsplash.jpg"
+    },
+    {
       id: 4, title: "Tribe by Sebastian Junger",
       entry: "This book is about belonging in a society and how our modern society does not meet the fundamental needs of a human being. We are cramped in our apartments, living alone or with your family. We are surrounded by people all the time, yet we feel alone",
       content: "./assets/markdown/post4.md", date: new Date("2019-06-02"), image: "./assets/img/elizabeth-lies-T9Gsevu_N8Y-unsplash.jpg"
